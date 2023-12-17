@@ -604,3 +604,23 @@ label {
     margin: 50px 0;
   }
 }
+
+.dropdown-menu {
+  min-width: 160px; /* Ajustez la largeur du dropdown */
+  background-color: #fff; /* Couleur de fond du dropdown */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); /* Ombre du dropdown */
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f5f5f5; /* Couleur de fond au survol */
+}
+
+.dropdown-menu a {
+  color: #333; /* Couleur du texte dans le dropdown */
+  font-size: 16px; /* Ajustez la taille du texte */
+}
+

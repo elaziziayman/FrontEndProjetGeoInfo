@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from 'react-router-dom'; 
 
 export const Navigation = (props) => {
   return (
@@ -18,7 +19,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+            E-Demandes
           </a>{" "}
         </div>
 
@@ -28,13 +29,8 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
-            <li>
               <a href="#about" className="page-scroll">
-                About
+                À propos
               </a>
             </li>
             <li>
@@ -43,20 +39,38 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
+              <a href="#features" className="page-scroll">
+                Types de Demandes
+              </a>
+            </li>
+            <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                Procédures Administratives
               </a>
             </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
+
+            {/* Dropdown */}
+            <li className="dropdown">
+              <a
+                href="#"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Espace <span className="caret"></span>
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="/espace-admin" >Espace Admin</a>
+                </li>
+                <li>
+                  <a href="/espace-citoyen">Espace Citoyen</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
+
             <li>
               <a href="#contact" className="page-scroll">
                 Contact

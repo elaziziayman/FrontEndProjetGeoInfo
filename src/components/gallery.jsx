@@ -6,10 +6,9 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Gallery</h2>
+          <h2>Procédures administratives</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Choisissez votre type d'autorisation et accédez aux documents (PDF) présentant sa procédure administrative.
           </p>
         </div>
         <div className="row">
