@@ -9,6 +9,7 @@ import { Contact } from "./contact";
 import Dashboard from "./dashboard/Dashboard";
 
 
+
 export default function LandingPage({data}) {
   
     return (
@@ -20,6 +21,7 @@ export default function LandingPage({data}) {
         <Features data={data.Features} />
         <Gallery data={data.Gallery} />
         <Contact data={data.Contact} /> 
+        
     </div>
         
     );

@@ -63,10 +63,10 @@ export const Navigation = (props) => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/espace-admin" >Espace Admin</a>
+                  <a href="/LoginAdmin" >Espace Admin</a>
                 </li>
                 <li>
-                  <a href="/espace-citoyen">Espace Citoyen</a>
+                  <a href="/Login">Espace Citoyen</a>
                 </li>
               </ul>
             </li>

@@ -20,6 +20,10 @@ import LocalisationDemandesAdmin from "./components/dashboard/LocalisationDemand
 import DemandesAvisAdmin from "./components/dashboard/DemandesAvisAdmin";
 import Citoyens from "./components/dashboard/Citoyens";
 import DemandesEnInstanceAdmin from "./components/dashboard/DemandesEnInstanceAdmin";
+import Login from "./components/dashboard/Login";
+import Register from "./components/dashboard/Register";
+import LoginAdmin from "./components/dashboard/LoginAdmin";
+
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -40,6 +44,9 @@ const App = () => {
       <Route path="/" element= {<LandingPage data = {landingPageData} />} />
         <Route path="/espace-citoyen" element={<Dashboard />} />
         <Route path="/espace-admin" element={<DashboardAdmin />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/LoginAdmin" element={<LoginAdmin />} />
+        <Route path="/Register" element={<Register />} />
         <Route path="/mes-demandes" element={<MesDemandes />} />
         <Route path="/mes-demandes-acceptees" element={<DemandesAcceptees />} />
         <Route path="/mes-demandes-rejetees" element={<DemandesRejetees />} />
@@ -50,7 +57,7 @@ const App = () => {
         <Route path="/localiser-les-demandes" element={<LocalisationDemandesAdmin />} />
 
         <Route path="/citoyens" element={<Citoyens />} />
-
+        
 
 
 
