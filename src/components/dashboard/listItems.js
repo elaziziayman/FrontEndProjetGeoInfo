@@ -91,5 +91,12 @@ export const adminListItems = (
       </ListItemIcon>
       <ListItemText primaryTypographyProps={{ fontSize: '14px' }} primary="Comptes Citoyens" />
     </ListItemButton>
+
+    <ListItemButton component={RouterLink} to="/admins">
+      <ListItemIcon>
+        <AssignmentIcon sx={{ fontSize: 23, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText primaryTypographyProps={{ fontSize: '14px' }} primary="Comptes Admin" />
+    </ListItemButton>
   </React.Fragment>
 );

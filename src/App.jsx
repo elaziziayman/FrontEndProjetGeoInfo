@@ -6,6 +6,7 @@ import MesDemandes from "./components/dashboard/MesDemandes";
 import DemandesAdmin from "./components/dashboard/DemandesAdmin";
 
 
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -23,6 +24,8 @@ import DemandesEnInstanceAdmin from "./components/dashboard/DemandesEnInstanceAd
 import Login from "./components/dashboard/Login";
 import Register from "./components/dashboard/Register";
 import LoginAdmin from "./components/dashboard/LoginAdmin";
+import Admins from "./components/dashboard/ComptesAdmin";
+import CreateAdmin from "./components/dashboard/createAdmin"
 
 
 
@@ -57,6 +60,9 @@ const App = () => {
         <Route path="/localiser-les-demandes" element={<LocalisationDemandesAdmin />} />
 
         <Route path="/citoyens" element={<Citoyens />} />
+        <Route path="/admins" element={< Admins/>} />
+        <Route path="/createAdmin" element={< CreateAdmin/>} />
+
         
 
 
